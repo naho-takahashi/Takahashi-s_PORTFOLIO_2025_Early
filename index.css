@@ -275,11 +275,12 @@ p {
 }
 
 .topic1-more h2 {
-    width: 600px;
+    width: 800px;
     height: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
     padding-top: 30px;
+    font-size: 200%;
 }
 
 .topic1-more h3 {
