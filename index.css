@@ -262,7 +262,8 @@ p {
     height: 100px;
 }
 
-.topic1-more h2, p {
+.topic1-more h2,
+p {
     background: linear-gradient(0deg, #b36029 0%, #ea7f38 100%);
     color: transparent;
     -webkit-background-clip: text;
@@ -294,7 +295,8 @@ p {
     font-size: 250%;
     font-style: normal;
     margin-left: 60px;
-    margin-bottom: 30px;}
+    margin-bottom: 30px;
+}
 
 .topic1-more p {
     margin-left: 75px;
@@ -303,12 +305,12 @@ p {
 }
 
 .topic1-more img {
-    width: 300px;
-    height: 250px;
+    width: 500px;
+    height: 300px;
     justify-content: left;
     margin-left: 6%;
     border-radius: 1%;
-    object-fit: contain;
+    object-fit: cover;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     top: 50%;
 }
@@ -439,7 +441,7 @@ article {
     margin-bottom: 50px;
 }
 
-.name h1{
+.name h1 {
     background: linear-gradient(0deg, #b36029 0%, #ea7f38 100%);
     color: transparent;
     -webkit-background-clip: text;
@@ -466,6 +468,10 @@ article {
     height: 300px;
     margin-left: 50%;
 } */
+
+.port-img {
+    width: 1000px;
+}
 
 
 /* フッターのCSS */
@@ -906,4 +912,924 @@ span {
 
 .nav-morph__link:hover .nav-morph__hover {
     transform: translateY(-100%);
+}
+
+/* スマホ用 CSS */
+
+@media only screen and (max-width: 767px) {
+    body {
+        background: linear-gradient(180deg, #edfafd 0%, #aed9da 25%, #3ddad7 50%, #2a93d5 75%, #135589 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: auto;
+        padding: auto;
+        width: auto;
+
+        &::-webkit-scrollbar {
+            width: 15px;
+            height: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #135589;
+            border-radius: 50px;
+        }
+    }
+
+    .topic1-more body {
+        background: linear-gradient(180deg, #edfafd 0%, #aed9da 25%, #3ddad7 50%, #2a93d5 75%, #135589 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .top {
+        width: 100%;
+        height: 470px;
+        margin-top: 150px;
+    }
+
+    .top h1 {
+        display: flex;
+        width: 400px;
+        height: 100px;
+        margin-left: 60%;
+        font-size: 450%;
+        background: linear-gradient(0deg, #135589 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 80%;
+        font-family: "Seaweed Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .top h1:hover {
+        opacity: 30%;
+    }
+
+    .sideber img {
+        width: 60px;
+        height: 60px;
+        margin-top: 15px;
+        margin-left: 30px;
+        position: sticky;
+        transition-duration: 0.7s;
+    }
+
+    .sideber img:hover {
+        transform: scale(1.3);
+        transform-origin: center center;
+    }
+
+    .topic1 {
+        background-color: white;
+        width: 60%;
+        margin-left: 20px;
+        border-radius: 20px;
+    }
+
+    .topic1 h1 {
+        background: linear-gradient(90deg, #b9d08b 15%, #00552e 88%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Seaweed Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 200%;
+        margin-left: 5%;
+        padding-top: 30px;
+    }
+
+    .topic1 h2,
+    p {
+        background: linear-gradient(0deg, #b36029 0%, #ea7f38 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 9%;
+    }
+
+    .topic1 h2 {
+        margin-bottom: 30px;
+    }
+
+    .topic1 p {
+        margin-left: 12%;
+    }
+
+    button {
+        background: none;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        height: 40px;
+    }
+
+    button:hover {
+        background: linear-gradient(90deg, #b9d08b 15%, #00552e 88%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .more-text {
+        display: inline-block;
+        height: 100px;
+        background: linear-gradient(90deg, #82f369 0%, #91cfff 40%, #ffaacc 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: none;
+        font-size: 400%;
+        font-weight: bold;
+        letter-spacing: 0.06em;
+        margin-left: 50%;
+    }
+
+    button.more-text {
+        transition-duration: 1s;
+    }
+
+    button.more-text:hover {
+        transform: scale(1.3);
+        transform-origin: center top;
+    }
+
+    .topic2 {
+        background-color: white;
+        width: 60%;
+        margin-left: 470px;
+        margin-top: 70px;
+        border-radius: 10px;
+    }
+
+    .topic2 h1 {
+        background: linear-gradient(90deg, #b9d08b 15%, #00552e 88%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 200%;
+        margin-left: 5%;
+        padding-top: 30px;
+    }
+
+    .topic2 h2,
+    p {
+        background: linear-gradient(0deg, #b36029 0%, #ea7f38 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 9%;
+    }
+
+    .topic2 h2 {
+        margin-left: 8%;
+    }
+
+    .topic2 p {
+        margin-left: 12%;
+    }
+
+    .topic3 {
+        background-color: white;
+        width: 60%;
+        margin-left: 20px;
+        margin-top: 70px;
+        border-radius: 20px;
+    }
+
+    .topic3 h1 {
+        background: linear-gradient(90deg, #b9d08b 15%, #00552e 88%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Seaweed Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 200%;
+        margin-left: 5%;
+        padding-top: 30px;
+    }
+
+    .topic3 h2,
+    p {
+        background: linear-gradient(0deg, #b36029 0%, #ea7f38 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 9%;
+    }
+
+    .topic3 h2 {
+        margin-bottom: 30px;
+    }
+
+    .topic3 p {
+        margin-left: 12%;
+    }
+
+    /* more.htmlのCSS */
+    .topic1-more {
+        background-color: white;
+        width: 95%;
+        height: 200%;
+        margin: auto;
+        border-radius: 20px;
+        margin-bottom: 50px;
+    }
+
+    .topic1-more h1 {
+        background: linear-gradient(90deg, #b9d08b 15%, #00552e 88%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Seaweed Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        margin: auto;
+        height: 100px;
+    }
+
+    .topic1-more h2,
+    p {
+        background: linear-gradient(0deg, #b36029 0%, #ea7f38 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 50px;
+    }
+
+    .topic1-more h2 {
+        width: 800px;
+        height: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-top: 30px;
+        font-size: 200%;
+    }
+
+    .topic1-more h3 {
+        background: linear-gradient(0deg, #82f369 0%, #91cfff 40%, #ffaacc 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-size: 250%;
+        font-style: normal;
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+
+    .topic1-more p {
+        margin-left: 75px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .topic1-more img {
+        width: 500px;
+        height: 300px;
+        justify-content: left;
+        margin-left: 6%;
+        border-radius: 1%;
+        object-fit: cover;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        top: 50%;
+    }
+
+    .topic1-more img:hover {
+        opacity: 50%;
+    }
+
+    .top-more {
+        width: 100%;
+        margin-top: 150px;
+    }
+
+    .top-more h1 {
+        width: 500px;
+        height: 140px;
+        font-size: 600%;
+        text-align: center;
+        margin: auto;
+        background: linear-gradient(0deg, #135589 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Seaweed Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        opacity: 80%;
+        top: 100px;
+    }
+
+    .top-more h1:hover {
+        opacity: 30%;
+    }
+
+    .p1-more p {
+        text-align: center;
+        width: 100px;
+        height: 200px;
+        margin: auto;
+        background: linear-gradient(0deg, #135589 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-style: normal;
+        opacity: 60%;
+    }
+
+    .p1-more p:hover {
+        opacity: 30%;
+    }
+
+    .p2-more p {
+        text-align: center;
+        width: 160px;
+        height: 200px;
+        margin: auto;
+        background: linear-gradient(0deg, #135589 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-style: normal;
+        opacity: 60%;
+    }
+
+    .p2-more p:hover {
+        opacity: 30%;
+    }
+
+    .p3-more p {
+        text-align: center;
+        width: 150px;
+        height: 200px;
+        margin: auto;
+        background: linear-gradient(0deg, #135589 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-style: normal;
+        opacity: 60%;
+    }
+
+    .p3-more p:hover {
+        opacity: 30%;
+    }
+
+    .star {
+        margin-left: 60%;
+        width: 300px;
+        font-size: 160%;
+    }
+
+    .section {
+        height: 1000px;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        padding: 100p 50px;
+    }
+
+    .top-button-again {
+        position: fixed;
+        right: 0;
+        bottom: 10px;
+        font-size: 50px;
+        color: #FFF;
+        background: linear-gradient(0deg, #a0cef2 94%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    section,
+    article {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .name h1 {
+        background: linear-gradient(0deg, #b36029 0%, #ea7f38 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 200%;
+        margin-left: 150px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .name img {
+        width: 370px;
+        height: 370px;
+        margin-right: 100px;
+    }
+
+    /* .name video {
+    width: 300px;
+    height: 300px;
+    margin-left: 50%;
+} */
+
+    .port-img {
+        width: 1000px;
+    }
+
+
+    /* フッターのCSS */
+    footer {
+        text-align: center;
+        background-color: #104872;
+
+    }
+
+    .footer {
+        width: auto;
+        box-sizing: border-box;
+    }
+
+    footer h1,
+    h2,
+    h3 {
+        background: linear-gradient(0deg, #ffffff 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: auto;
+    }
+
+    .footer img {
+        width: 50px;
+        height: 50px;
+        size: 50%;
+    }
+
+
+    /* タイトルの泡のCSS */
+
+    .bubble {
+        position: absolute;
+        bottom: 0;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        animation: bubble 10s ease-in infinite;
+    }
+
+    @keyframes bubble {
+        0% {
+            bottom: -100px;
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(100px);
+        }
+
+        100% {
+            bottom: 1000px;
+        }
+    }
+
+    .bubble {
+        position: absolute;
+        bottom: 0;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        animation: bubble 10s ease-in infinite;
+    }
+
+    .bubble:nth-child(1) {
+        width: 20px;
+        height: 20px;
+        left: 10%;
+        animation: bubble 5s ease-in infinite;
+    }
+
+    .bubble:nth-child(1) {
+        width: 20px;
+        height: 20px;
+        left: 10%;
+        animation-duration: 5s;
+    }
+
+    .bubble:nth-child(2) {
+        width: 30px;
+        height: 30px;
+        left: 20%;
+        animation-delay: 1s;
+    }
+
+    .bubble:nth-child(3) {
+        width: 30px;
+        height: 30px;
+        left: 30%;
+        animation-duration: 3s;
+    }
+
+    .bubble:nth-child(4) {
+        width: 50px;
+        height: 50px;
+        left: 45%;
+        animation-duration: 6s;
+        animation-delay: 2s;
+    }
+
+    .bubble:nth-child(5) {
+        width: 10px;
+        height: 10px;
+        left: 60%;
+        animation-duration: 3.5s;
+    }
+
+    .bubble:nth-child(6) {
+        width: 30px;
+        height: 30px;
+        left: 70%;
+        animation-duration: 5s;
+    }
+
+    .bubble:nth-child(7) {
+        width: 25px;
+        height: 25px;
+        left: 80%;
+        animation-duration: 4s;
+    }
+
+
+    .bottom-border-line {
+        text-decoration: underline;
+        border-color: red;
+        background: linear-gradient(0deg, #2a93d5 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    /*ハンガーガーメニュー*/
+    span {
+        background: linear-gradient(0deg, #135589 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Kaisei HarunoUmi", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .hamburger-morph {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .hamburger-morph__icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hamburger-morph__line {
+        fill: none;
+        stroke: #91cfff;
+        stroke-width: 6;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hamburger-morph__line:nth-child(1) {
+        stroke-dasharray: 60 207;
+    }
+
+    .hamburger-morph__line:nth-child(2) {
+        stroke-dasharray: 60 60;
+    }
+
+    .hamburger-morph__line:nth-child(3) {
+        stroke-dasharray: 60 207;
+    }
+
+    .hamburger-morph.active .hamburger-morph__line:nth-child(1) {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+    }
+
+    .hamburger-morph.active .hamburger-morph__line:nth-child(2) {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+    }
+
+    .hamburger-morph.active .hamburger-morph__line:nth-child(3) {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+    }
+
+    .nav-morph {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #91cfff;
+        clip-path: circle(0% at calc(100% - 44px) 44px);
+        transition: clip-path 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 900;
+    }
+
+    .nav-morph.active {
+        clip-path: circle(150% at calc(100% - 44px) 44px);
+    }
+
+    .nav-morph__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-morph__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    .nav-morph__item {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .nav-morph.active .nav-morph__item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-morph.active .nav-morph__item:nth-child(1) {
+        transition-delay: 0.3s;
+    }
+
+    .nav-morph.active .nav-morph__item:nth-child(2) {
+        transition-delay: 0.4s;
+    }
+
+    .nav-morph.active .nav-morph__item:nth-child(3) {
+        transition-delay: 0.5s;
+    }
+
+    .nav-morph.active .nav-morph__item:nth-child(4) {
+        transition-delay: 0.6s;
+    }
+
+    .nav-morph__link {
+        position: relative;
+        display: inline-block;
+        padding: 20px;
+        font-size: 28px;
+        color: #fff;
+        text-decoration: none;
+        overflow: hidden;
+    }
+
+    /* .nav-morph__text,
+.nav-morph__hover {
+    display: block;
+    transition: transform 0.3s ease;
+} */
+
+    .nav-morph__hover {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: translateY(0%);
+    }
+
+    .nav-morph__link:hover .nav-morph__text {
+        transform: translateY(-100%);
+    }
+
+    .nav-morph__link:hover .nav-morph__hover {
+        transform: translateY(-100%);
+    }
+
+    .hamburger-morph {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .hamburger-morph__icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hamburger-morph__line {
+        fill: none;
+        stroke: #91cfff;
+        stroke-width: 6;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hamburger-morph__line:nth-child(1) {
+        stroke-dasharray: 60 207;
+    }
+
+    .hamburger-morph__line:nth-child(2) {
+        stroke-dasharray: 60 60;
+    }
+
+    .hamburger-morph__line:nth-child(3) {
+        stroke-dasharray: 60 207;
+    }
+
+    .hamburger-morph.active .hamburger-morph__line:nth-child(1) {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+    }
+
+    .hamburger-morph.active .hamburger-morph__line:nth-child(2) {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+    }
+
+    .hamburger-morph.active .hamburger-morph__line:nth-child(3) {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+    }
+
+    .nav-morph {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #aed9da;
+        /*サイドバー押下時の背景色*/
+        clip-path: circle(0% at calc(100% - 44px) 44px);
+        transition: clip-path 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 900;
+    }
+
+    .nav-morph.active {
+        clip-path: circle(150% at calc(100% - 44px) 44px);
+    }
+
+    .nav-morph__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-morph__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    .nav-morph__item {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .nav-morph.active .nav-morph__item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-morph.active .nav-morph__item:nth-child(1) {
+        transition-delay: 0.3s;
+    }
+
+    .nav-morph.active .nav-morph__item:nth-child(2) {
+        transition-delay: 0.4s;
+    }
+
+    .nav-morph.active .nav-morph__item:nth-child(3) {
+        transition-delay: 0.5s;
+    }
+
+    .nav-morph.active .nav-morph__item:nth-child(4) {
+        transition-delay: 0.6s;
+    }
+
+    .nav-morph__link {
+        position: relative;
+        display: inline-block;
+        padding: 20px;
+        font-size: 28px;
+        color: #fff;
+        text-decoration: none;
+        overflow: hidden;
+    }
+
+    /* .nav-morph__text,
+.nav-morph__hover {
+    display: block;
+    transition: transform 0.3s ease;
+} */
+
+    .nav-morph__hover {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: translateY(0%);
+    }
+
+    .nav-morph__link:hover .nav-morph__text {
+        transform: translateY(-100%);
+    }
+
+    .nav-morph__link:hover .nav-morph__hover {
+        transform: translateY(-100%);
+    }
+
 }
