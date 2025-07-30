@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* パソコン用 */
 body {
     background: linear-gradient(180deg, #edfafd 0%, #aed9da 25%, #3ddad7 50%, #2a93d5 75%, #135589 100%);
     color: transparent;
@@ -916,26 +917,16 @@ span {
 
 /* スマホ用 CSS */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 479px) {
     body {
         background: linear-gradient(180deg, #edfafd 0%, #aed9da 25%, #3ddad7 50%, #2a93d5 75%, #135589 100%);
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin: auto;
-        padding: auto;
+        margin: 0;
+        padding: 0;
         width: auto;
-
-        &::-webkit-scrollbar {
-            width: 15px;
-            height: 10px;
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background-color: #135589;
-            border-radius: 50px;
-        }
     }
 
     .topic1-more body {
@@ -956,8 +947,8 @@ span {
         display: flex;
         width: 400px;
         height: 100px;
-        margin-left: 60%;
-        font-size: 450%;
+        margin-left: 40%;
+        font-size: 300%;
         background: linear-gradient(0deg, #135589 100%);
         color: transparent;
         -webkit-background-clip: text;
@@ -989,7 +980,7 @@ span {
 
     .topic1 {
         background-color: white;
-        width: 60%;
+        width: 70%;
         margin-left: 20px;
         border-radius: 20px;
     }
@@ -1004,8 +995,9 @@ span {
         font-weight: 400;
         font-style: normal;
         font-size: 200%;
-        margin-left: 5%;
+        margin-left: 2%;
         padding-top: 30px;
+        font-size: 100%;
     }
 
     .topic1 h2,
@@ -1018,15 +1010,17 @@ span {
         font-family: "Kaisei HarunoUmi", serif;
         font-weight: 400;
         font-style: normal;
-        margin-left: 9%;
+        margin-left: 6%;
     }
 
     .topic1 h2 {
         margin-bottom: 30px;
+        font-size: 100%;
     }
 
     .topic1 p {
-        margin-left: 12%;
+        margin-left: 6%;
+        font-size: 30%;
     }
 
     button {
@@ -1056,10 +1050,10 @@ span {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         border: none;
-        font-size: 400%;
+        font-size: 200%;
         font-weight: bold;
         letter-spacing: 0.06em;
-        margin-left: 50%;
+        margin-left: 40%;
     }
 
     button.more-text {
@@ -1073,9 +1067,9 @@ span {
 
     .topic2 {
         background-color: white;
-        width: 60%;
-        margin-left: 470px;
-        margin-top: 70px;
+        width: 70%;
+        margin-left: 100px;
+        margin-top: 35px;
         border-radius: 10px;
     }
 
@@ -1089,8 +1083,9 @@ span {
         font-weight: 400;
         font-style: normal;
         font-size: 200%;
-        margin-left: 5%;
-        padding-top: 30px;
+        margin-left: 3%;
+        padding-top: 15px;
+        font-size: 100%;
     }
 
     .topic2 h2,
@@ -1103,22 +1098,24 @@ span {
         font-family: "Kaisei HarunoUmi", serif;
         font-weight: 400;
         font-style: normal;
-        margin-left: 9%;
+        margin-left: 6%;
     }
 
     .topic2 h2 {
-        margin-left: 8%;
+        margin-left: 6%;
+        font-size: 100%;
     }
 
     .topic2 p {
-        margin-left: 12%;
+        margin-left: 6%;
+        font-size: 30%;
     }
 
     .topic3 {
         background-color: white;
-        width: 60%;
+        width: 70%;
         margin-left: 20px;
-        margin-top: 70px;
+        margin-top: 35px;
         border-radius: 20px;
     }
 
@@ -1134,6 +1131,7 @@ span {
         font-size: 200%;
         margin-left: 5%;
         padding-top: 30px;
+        font-size: 100%;
     }
 
     .topic3 h2,
@@ -1146,25 +1144,28 @@ span {
         font-family: "Kaisei HarunoUmi", serif;
         font-weight: 400;
         font-style: normal;
-        margin-left: 9%;
+        margin-left: 6%;
     }
 
     .topic3 h2 {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+        font-size: 100%;
     }
 
     .topic3 p {
-        margin-left: 12%;
+        margin-left: 6%;
+        font-size: 30%;
     }
 
     /* more.htmlのCSS */
     .topic1-more {
         background-color: white;
-        width: 95%;
-        height: 200%;
-        margin: auto;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
         border-radius: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     .topic1-more h1 {
@@ -1176,7 +1177,6 @@ span {
         font-family: "Seaweed Script", cursive;
         font-weight: 400;
         font-style: normal;
-        margin: auto;
         height: 100px;
     }
 
@@ -1190,16 +1190,14 @@ span {
         font-family: "Kaisei HarunoUmi", serif;
         font-weight: 400;
         font-style: normal;
-        margin-left: 50px;
     }
 
     .topic1-more h2 {
-        width: 800px;
-        height: 50px;
         margin-top: 30px;
         margin-bottom: 30px;
-        padding-top: 30px;
-        font-size: 200%;
+        padding-top: 15px;
+        font-size: 100%;
+        margin-left: 10px;
     }
 
     .topic1-more h3 {
@@ -1210,27 +1208,26 @@ span {
         -webkit-text-fill-color: transparent;
         font-family: "Kaisei HarunoUmi", serif;
         font-weight: 400;
-        font-size: 250%;
+        font-size: 150%;
         font-style: normal;
-        margin-left: 60px;
+        margin-left: 30px;
         margin-bottom: 30px;
     }
 
     .topic1-more p {
-        margin-left: 75px;
+        margin-left: 10px;
         margin-bottom: 10px;
         padding-bottom: 10px;
     }
 
     .topic1-more img {
-        width: 500px;
-        height: 300px;
-        justify-content: left;
-        margin-left: 6%;
+        width: 250px;
+        height: 150px;
         border-radius: 1%;
         object-fit: cover;
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        top: 50%;
+        margin: 0;
+        padding: 0;
     }
 
     .topic1-more img:hover {
@@ -1243,11 +1240,12 @@ span {
     }
 
     .top-more h1 {
-        width: 500px;
-        height: 140px;
-        font-size: 600%;
+        width: 250px;
+        height: 70px;
+        font-size: 300%;
         text-align: center;
         margin: auto;
+        padding: auto;
         background: linear-gradient(0deg, #135589 100%);
         color: transparent;
         -webkit-background-clip: text;
@@ -1257,7 +1255,6 @@ span {
         font-weight: 400;
         font-style: normal;
         opacity: 80%;
-        top: 100px;
     }
 
     .top-more h1:hover {
@@ -1267,7 +1264,7 @@ span {
     .p1-more p {
         text-align: center;
         width: 100px;
-        height: 200px;
+        height: 100px;
         margin: auto;
         background: linear-gradient(0deg, #135589 100%);
         color: transparent;
@@ -1287,7 +1284,7 @@ span {
     .p2-more p {
         text-align: center;
         width: 160px;
-        height: 200px;
+        height: 100px;
         margin: auto;
         background: linear-gradient(0deg, #135589 100%);
         color: transparent;
@@ -1307,7 +1304,7 @@ span {
     .p3-more p {
         text-align: center;
         width: 150px;
-        height: 200px;
+        height: 100px;
         margin: auto;
         background: linear-gradient(0deg, #135589 100%);
         color: transparent;
@@ -1376,16 +1373,12 @@ span {
     }
 
     .name img {
-        width: 370px;
-        height: 370px;
-        margin-right: 100px;
+        width: 180px;
+        height: 180px;
+        margin: 0;
+        padding: 0;
+        display: flex;
     }
-
-    /* .name video {
-    width: 300px;
-    height: 300px;
-    margin-left: 50%;
-} */
 
     .port-img {
         width: 1000px;
